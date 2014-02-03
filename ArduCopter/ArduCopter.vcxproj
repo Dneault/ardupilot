@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5D192728-0A7A-45E0-B5D3-DCE679C7C126}</ProjectGuid>
+    <ProjectGuid>{D6A8E5C1-64AE-42BB-ACE4-4413B3A1B6DD}</ProjectGuid>
     <RootNamespace>ArduCopter</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -64,6 +64,101 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="AP_State.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="ArduCopter.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Attitude.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="auto_tune.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands_logic.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands_process.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="compat.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_modes.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="crash_check.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="drift.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="events.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="failsafe.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="fence.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="flip.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="GCS_Mavlink.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="heli.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="inertia.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="leds.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Log.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="motors.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="navigation.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Parameters.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="perf_info.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="position_vector.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="radio.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="sensors.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="setup.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="system.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="test.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="UserCode.pde">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="APM_Config.h">
       <FileType>CppCode</FileType>
     </ClInclude>
@@ -89,101 +184,6 @@
       <FileType>CppCode</FileType>
     </ClInclude>
     <ClInclude Include="Visual Micro\.ArduCopter.vsarduino.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="AP_State.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="ArduCopter.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="Attitude.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="auto_tune.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="commands.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="commands_logic.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="commands_process.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="compat.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="control_modes.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="crash_check.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="drift.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="events.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="failsafe.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="fence.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="flip.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="GCS_Mavlink.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="heli.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="inertia.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="leds.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="Log.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="motors.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="navigation.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="Parameters.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="perf_info.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="position_vector.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="radio.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="sensors.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="setup.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="system.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="test.ino">
-      <FileType>CppCode</FileType>
-    </None>
-    <None Include="UserCode.ino">
-      <FileType>CppCode</FileType>
-    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

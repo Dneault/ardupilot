@@ -15,6 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ArduCopter.pde" />
+    <None Include="AP_State.pde" />
+    <None Include="Attitude.pde" />
+    <None Include="GCS_Mavlink.pde" />
+    <None Include="Log.pde" />
+    <None Include="Parameters.pde" />
+    <None Include="UserCode.pde" />
+    <None Include="auto_tune.pde" />
+    <None Include="commands.pde" />
+    <None Include="commands_logic.pde" />
+    <None Include="commands_process.pde" />
+    <None Include="compat.pde" />
+    <None Include="control_modes.pde" />
+    <None Include="crash_check.pde" />
+    <None Include="drift.pde" />
+    <None Include="events.pde" />
+    <None Include="failsafe.pde" />
+    <None Include="fence.pde" />
+    <None Include="flip.pde" />
+    <None Include="heli.pde" />
+    <None Include="inertia.pde" />
+    <None Include="leds.pde" />
+    <None Include="motors.pde" />
+    <None Include="navigation.pde" />
+    <None Include="perf_info.pde" />
+    <None Include="position_vector.pde" />
+    <None Include="radio.pde" />
+    <None Include="sensors.pde" />
+    <None Include="setup.pde" />
+    <None Include="system.pde" />
+    <None Include="test.pde" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="Visual Micro\.ArduCopter.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -42,38 +75,5 @@
     <ClInclude Include="defines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="AP_State.ino" />
-    <None Include="ArduCopter.ino" />
-    <None Include="Attitude.ino" />
-    <None Include="GCS_Mavlink.ino" />
-    <None Include="Log.ino" />
-    <None Include="Parameters.ino" />
-    <None Include="UserCode.ino" />
-    <None Include="auto_tune.ino" />
-    <None Include="commands.ino" />
-    <None Include="commands_logic.ino" />
-    <None Include="commands_process.ino" />
-    <None Include="compat.ino" />
-    <None Include="control_modes.ino" />
-    <None Include="crash_check.ino" />
-    <None Include="drift.ino" />
-    <None Include="events.ino" />
-    <None Include="failsafe.ino" />
-    <None Include="fence.ino" />
-    <None Include="flip.ino" />
-    <None Include="heli.ino" />
-    <None Include="inertia.ino" />
-    <None Include="leds.ino" />
-    <None Include="motors.ino" />
-    <None Include="navigation.ino" />
-    <None Include="perf_info.ino" />
-    <None Include="position_vector.ino" />
-    <None Include="radio.ino" />
-    <None Include="sensors.ino" />
-    <None Include="setup.ino" />
-    <None Include="system.ino" />
-    <None Include="test.ino" />
   </ItemGroup>
 </Project>
