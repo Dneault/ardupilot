@@ -373,8 +373,14 @@ public:
     AP_Int16        heli_stab_col_min;                                          // min collective while pilot directly controls collective in stabilize mode
     AP_Int16        heli_stab_col_max;                                          // min collective while pilot directly controls collective in stabilize mode
 #endif
+
 #if FRAME_CONFIG ==     SINGLE_FRAME
     // Single
+    RC_Channel      single_servo_1, single_servo_2, single_servo_3, single_servo_4;     // servos for four flaps
+#endif
+
+#if FRAME_CONFIG ==     COAX_FRAME
+    // Coax
     RC_Channel      single_servo_1, single_servo_2, single_servo_3, single_servo_4;     // servos for four flaps
 #endif
 
@@ -435,6 +441,12 @@ public:
         heli_servo_4        (CH_4),
 #endif
 #if FRAME_CONFIG ==     SINGLE_FRAME
+        single_servo_1        (CH_1),
+        single_servo_2        (CH_2),
+        single_servo_3        (CH_3),
+        single_servo_4        (CH_4),
+#endif
+#if FRAME_CONFIG ==     COAX_FRAME
         single_servo_1        (CH_1),
         single_servo_2        (CH_2),
         single_servo_3        (CH_3),
