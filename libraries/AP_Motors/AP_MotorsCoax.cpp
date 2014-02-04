@@ -15,8 +15,9 @@
  */
 
 /*
- *       AP_MotorsSingle.cpp - ArduCopter motors library
+ *       AP_MotorsCoax.cpp - ArduCopter motors library
  *       Code by RandyMackay. DIYDrones.com
+ *       Additions by Dan Neault
  *
  */
 
@@ -58,7 +59,7 @@ const AP_Param::GroupInfo AP_MotorsCoax::var_info[] PROGMEM = {
     // @Description: Controls whether motors always spin when armed (must be below THR_MIN)
     // @Values: 0:Do Not Spin,70:VerySlow,100:Slow,130:Medium,150:Fast
     // @User: Standard
-    AP_GROUPINFO("SPIN_ARMED", 5, AP_MotorsCoax, _spin_when_armed, AP_MOTORS_SPIN_WHEN_ARMED),
+    AP_GROUPINFO("SPIN_ARMED", 5, AP_MotorsCoax, _spin_when_armed, 0), //AP_MOTORS_SPIN_WHEN_ARMED
 
     // @Param: REV_ROLL
     // @DisplayName: Reverse roll feedback 
@@ -92,8 +93,8 @@ void AP_MotorsCoax::Init()
     // call parent Init function to set-up throttle curve
     AP_Motors::Init();
 
-    // set update rate for the 3 motors (but not the servo on channel 7)
-    set_update_rate(_speed_hz);
+    // set update rate for the 4 motors (but not the servo on channel 7)
+    set_update_rate(_speed_hz); // * speed_hz set in constructor in header (490)
 
     // set the motor_enabled flag so that the ESCs can be calibrated like other frame types
     motor_enabled[AP_MOTORS_MOT_1] = true;
